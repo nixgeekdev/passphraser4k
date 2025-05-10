@@ -5,15 +5,14 @@
  */
 
 plugins {
-    id("org.nixdork.diceware.kotlin-application-conventions")
+    // id("org.nixdork.diceware.kotlin-application-conventions")
 }
 
 dependencies {
-    implementation("org.apache.commons:commons-text")
-    implementation(project(":utilities"))
+    // implementation("org.apache.commons:commons-text")
 }
 
-application {
-    // Define the main class for the application.
-    mainClass.set("org.nixdork.diceware.app.AppKt")
-}
+//application {
+//    // Define the main class for the application.
+//    mainClass.set("org.nixdork.diceware.app.AppKt")
+//}
