@@ -2,14 +2,14 @@
 
 A word about [diceware](diceware.md) wordlists.
 
-A diceware wordlist is a collection of words that are used in the diceware
+A passphrase wordlist is a collection of words that are used in a
 passphrase generation method. The diceware method is a simple and effective way
 to generate strong, memorable passwords or passphrases using dice or other
 random number generators. Each word in the wordlist is assigned a unique
 numerical code, typically a five-digit number, which allows users to generate
 random passphrases by rolling dice.
 
-The format of a diceware wordlist is straightforward. Each line in the wordlist
+The format of a passphrase wordlist is straightforward. Each line in the wordlist
 contains a five-digit number followed by a space and a corresponding word. For
 example:
 
