@@ -1,0 +1,37 @@
+name: Build Passphraser4K
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      adhocCommand:
+        description: 'Gradle: Adhoc command'
+        required: false
+        default: ''
+
+permissions:
+  actions: read
+
+concurrency:
+  group: gradle-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gradle-build:
+    name: Gradle Build (${{ github.head_ref }})
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'zulu'
+      - name: Gradle Build
+        run: ./gradlew build ${{ github.event.inputs.adhocCommand || '' }}
