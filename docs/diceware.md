@@ -30,7 +30,7 @@ security of a passphrase.
 
 While passphrases can provide stronger security, it is still important to follow
 good password practices such as regularly changing them, avoiding reuse across
-different accounts, and keeping them confidential. Utilizing multi-factor
+different accounts, and keeping them confidential. Using multi-factor
 authentication alongside passphrases adds an extra layer of protection,
 requiring an additional form of verification to access sensitive information.
 
