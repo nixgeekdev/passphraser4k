@@ -1,0 +1,18 @@
+[versions]
+# Language Versions
+java-language = "21"
+kotlin-language = "2.1.20"
+
+detekt-version = "1.23.8"
+kotest-version = "5.9.1"
+kotlinx-json-version = "1.8.1"
+
+[libraries]
+detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt-version" }
+kotest-assertions = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest-version" }
+kotest-datatest = { module = "io.kotest:kotest-framework-datatest", version.ref = "kotest-version" }
+kotest-runner = { module = "io.kotest:kotest-runner-junit5-jvm", version.ref = "kotest-version" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-json-version" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin-language" }
