@@ -53,6 +53,3 @@ build-testlogger = { module = "com.adarshr:gradle-test-logger-plugin", version.r
 
 # https://github.com/ben-manes/gradle-versions-plugin
 build-versions = { module = "com.github.ben-manes:gradle-versions-plugin", version.ref = "build-versions" }
-
-[plugins]
-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin-language" }
