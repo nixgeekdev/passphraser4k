@@ -1,5 +1,7 @@
 
 plugins {
+    alias(libs.plugins.kotlin.jvm)
+    alias(libs.plugins.kotlin.json)
     id("local.library-conventions")
 }
 
