@@ -1,11 +1,11 @@
 package dev.nixgeek.passphrases.wordlists
 
+import dev.nixgeek.passphrases.fixtures.FAKE_WORDLIST_FILE_REINHOLD
+import dev.nixgeek.passphrases.fixtures.FAKE_WORDLIST_FILE_SUFFIX
 import dev.nixgeek.passphrases.fixtures.FAKE_WORDLIST_ID_BAR
 import dev.nixgeek.passphrases.fixtures.FAKE_WORDLIST_ID_BAZ
 import dev.nixgeek.passphrases.fixtures.FAKE_WORDLIST_ID_FOO
 import dev.nixgeek.passphrases.fixtures.FAKE_WORDLIST_ID_QUX
-import dev.nixgeek.passphrases.fixtures.FAKE_WORDLIST_FILE_REINHOLD
-import dev.nixgeek.passphrases.fixtures.FAKE_WORDLIST_FILE_SUFFIX
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.datatest.withData
 import io.kotest.matchers.collections.shouldBeIn

@@ -15,12 +15,11 @@ object WordlistGenerator {
     private val jsonCache = wlFileNames.associateWith { fileName -> loadFile(fileName) }
 
     @OptIn(ExperimentalSerializationApi::class)
-    private fun loadFile(filename: String): JsonElement {
-        return json.decodeFromStream<JsonElement>(
+    private fun loadFile(filename: String): JsonElement =
+        json.decodeFromStream<JsonElement>(
             Random::class.java.getResourceAsStream("/$filename")
                 ?: throw IllegalStateException("wordlist not found for filename: $filename"),
         )
-    }
 
     fun generate(id: String): JsonObject? = jsonCache["$id.json"]?.jsonObject
 }
